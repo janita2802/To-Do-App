@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do-App</title>
+    <link rel="stylesheet" href="styles\index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body>
+    <div class="header">
+        <div class="lines">
+            <h2 style="display: flex;"><div class="bar1"><hr></div>What's on your mind ?<div class="bar2"><hr></div></h2>
+            <h1>To-Do <span>List</span></h1> 
+        </div>
+        <img src="images/logo.png" alt="bg">   
+    </div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="archive.html">Archive</a>
+    </nav>
+    <div id="container">
+        <div id="form">
+            <form>
+                <div>
+                    <input type="text" id="task" class="form-control" placeholder="What's on your Mind?" title="Write a Task..." />
+                    <!-- <label for="priority">Priority:</label> -->
+                    <select title="Select a priority..." id="priority" name="priority">
+                    <option value="high">High</option>
+                    <option value="medium">Medium</option>
+                    <option value="low">Low</option>
+                    </select>
+                </div>
+                <button id="submit" title="Add to do work.." type="submit">Add To Do</button>
+            </form>
+        </div>
+        <div id="data">
+            <table border="1">  
+                <thead>
+                    <th class="head">Title</th>
+                    <th class="head">Priority</th>
+                    <th class="head">Status</th>
+                    <th class="head">Archive</th>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+    <footer>
+        <p>by Janita Phatak</p>
+    </footer>
+    <script src="scripts\index.js" defer></script>
+</body>
+</html>
